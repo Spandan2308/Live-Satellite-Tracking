@@ -1,1 +1,3 @@
-# Live-Satellite-Tracking
+Here I have used N2YO library to track live locations of various satellite. The library will fetch satellite data like TLE and positions using NORAD ID and the user's N2YO key. 
+I have tracked five satellites namely ISS, KALAMSAT-V2/PSLV, ASTROSAT, CSS (TIANHE-1) and NOAA 20 (JPSS 1). Their live locations are then plotted on a earth map using Plotly (scatter_geo). 
+The last block uses leaflet based folium library to track constantly changig live locations of these satelltes without reloading the map. However, given the limit to number of transaction per hour by an user with N2YO API, the code is not effective to constantly track satellites.    
